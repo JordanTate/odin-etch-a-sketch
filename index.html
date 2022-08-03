@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch | The Odin Project</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/caab8a0db0.js" crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="nav">
+        <h1>Etch-a-Sketch</h1>
+        <div class="grid-controls">
+            <div class="grid-controls__size">
+                <h2>Grid Size</h2>
+                <input type="range" 
+                       name="grid-size-slider" 
+                       id="grid-size"
+                       min="16"
+                       max="64"
+                       step="16"
+                       value="16">
+            </div>
+            <div class="grid-controls__color">
+                <h2>Colour</h2>
+                <input type="color" 
+                       name="grid-color-selector" 
+                       id="grid-color"
+                       value="#252525">
+            </div>
+            <div class="grid-controls__reset">
+                <button class="reset-btn">Reset</button>
+            </div>
+            <div class="grid-controls__mobile-tab">
+                Controls
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="grid"></div>
+        <div class="footer">
+            <p>Copyright © 2022 Jordan Tate</p>
+            <a href="https://github.com/JordanTate">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
